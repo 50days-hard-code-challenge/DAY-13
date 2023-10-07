@@ -1,0 +1,16 @@
+string replaceSpaces(string &str){
+	string tamp = "";
+    
+    for(int i=0; i<str.length(); i++) {
+        if(str[i] == ' '){
+            tamp.push_back('@');
+            tamp.push_back('4');
+            tamp.push_back('0');
+        }
+        else
+        {
+            tamp.push_back(str[i]);
+        }
+    }
+    return tamp;
+}
